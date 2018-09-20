@@ -642,7 +642,7 @@ if (empty($_REQUEST['log'])) {
                                     </div>                                    
                                 </div>
                             <?php
-                            } else if (limpar_comparacao($cod_regiao) == 3) {
+                            } else if (limpar_comparacao($cod_regiao) == 3) {                                
                                 //RA
                             ?>
                                 <div class="row">
@@ -662,7 +662,7 @@ if (empty($_REQUEST['log'])) {
                                                 <?php
                                                 $sql_regiao = "SELECT tb_regiao_administrativa.* FROM tb_regiao_administrativa ";
                                                 $sql_regiao .= " INNER JOIN tb_regiao ON tb_regiao.cod_regiao = tb_regiao_administrativa.cod_regiao ";
-                                                $sql_regiao .= " WHERE tb_regiao_administrativa.cod_ativo = 1 ORDER BY txt_regiao, txt_ra";
+                                                $sql_regiao .= " WHERE tb_regiao_administrativa.cod_ativo = 1 ORDER BY txt_regiao, cod_ra";
                                                 $q = pg_query($sql_regiao);
                                                 $cod_ra_qtd = 0;                                                
 
@@ -769,7 +769,7 @@ if (empty($_REQUEST['log'])) {
                                     </div> 
                                 </div>   
                             <?php                            
-                            } else if (limpar_comparacao($cod_regiao) == 4) {
+                            } else if (limpar_comparacao($cod_regiao) == 4) {                                
                                 //Região de Saúde
                             ?>
                                 <div class="row">
