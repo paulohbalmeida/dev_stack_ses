@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script>        
+        window.location.assign('sistema/login.php');
+    </script>    
+    <title>SESPLAN - WEB</title>
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+</head>
+<body>
+    <div class="overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="box--shadow">
+                        <div class="box box--body-auth">
+                            <div class="box__logo">
+								<a href="http://www.brasilia.df.gov.br/" target="blank">
+									<img src="assets/img/logo_gov_bsb.png" class="img-responsive" alt="SESPLAN - WEB">
+								</a>								
+                            </div><!-- / LOGO -->
+                            <form action="dashboard/index.html">
+								<div align="center">
+									<p>
+										<label for="field_titulo" class="label-control">SESPLAN - WEB</label>
+									</p>
+								</div>								
+                                <div class="form-group">
+                                    <label for="field_login" class="label-control">Login:</label>
+                                    <input type="text" id="field_login" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="field_password" class="label-control">Senha:</label>
+                                    <input type="password" id="field_password" class="form-control">
+                                </div>
+                                <div class="pull-left">
+                                    <!--<a href="recuperar-senha/index.html">Esqueceu sua senha?</a>-->
+                                </div>
+                                <div class="pull-right">
+                                    <button type="submit" class="btn btn--theme">Entrar</button>
+                                </div>
+                            </form>
+                            <div class="clearfix"></div>
+                            <hr>
+                        </div><!-- /box body -->
+                        <div class="box box--footer-auth">
+                            <div class="text-center">
+                                <p><strong>Ainda não tem uma conta?</strong></p>
+                                <a href="#" class="btn btn--theme">fazer cadastro</a>
+                            </div><!-- /center -->
+                        </div><!-- /box footer -->
+                    </div><!-- box shadow -->
+                </div><!-- /col -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+
+    </div>
+</body>
+</html>
